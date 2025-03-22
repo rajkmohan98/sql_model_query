@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "cc740726-3a88-4d71-8734-b39453869abd",
+		"name": "llm_query",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "36963511"
+	},
+	"item": [
+		{
+			"name": "to query the data from llm model",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"model\":\"openai\",\n    \"query\":\"uses of django\"\n}\n\n#model: option are openai, llama,huggingface",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/llm_model/llm_query/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/database/llm_model/llm_data_history/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/llm_model/llm_data_history/"
+			},
+			"response": []
+		}
+	]
+}
