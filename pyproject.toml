@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sql_model_query"
+version = "0.1.0"
+description = "A Django project for SQL query execution and LLM model interaction"
+authors = [
+    {name = "MohanRajK", email = "rajkmohan1998@gmail.com"}
+]
+dependencies = [
+    "Django>=4.0",
+    "djangorestframework",
+    "psycopg2",
+    "mysqlclient",
+    "requests",
+    "pandas",
+    "openai",
+]
+
+[tool.setuptools]
+packages = ["database_query_app", "llm_query_app"]
